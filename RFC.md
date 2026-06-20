@@ -61,7 +61,7 @@ Legal text content lives in Google Docs and will be provided directly (as text) 
 
 ### 4.3 Domain
 
-`CNAME` file is in place with a placeholder domain (`yourname.dev`). To go live with a custom domain: register it, point a `CNAME` DNS record at `<username>.github.io`, and replace the placeholder in the `CNAME` file. Otherwise the free GitHub subdomain works as-is — no domain purchase required.
+Custom domain: **`ramanovich.dev`** (already registered). The `CNAME` file in the repo root is set to this domain. Remaining step: add a `CNAME` DNS record at the registrar pointing to `<username>.github.io`. GitHub provisions SSL automatically via Let's Encrypt once DNS resolves and Pages is enabled.
 
 ---
 
@@ -71,7 +71,7 @@ Legal text content lives in Google Docs and will be provided directly (as text) 
 legal-pages/
 ├── index.html                       blank homepage, no links
 ├── style.css                        shared stylesheet, mobile-responsive
-├── CNAME                            placeholder custom domain
+├── CNAME                            custom domain: ramanovich.dev
 ├── README.md                        GitHub Pages setup notes
 │
 ├── stop-the-stranger/
@@ -144,7 +144,6 @@ URLs must return HTTP 200 with readable content — Apple may check during revie
 
 - [ ] Do all 4 apps share the same base privacy policy text, or is each unique?
 - [ ] What is the developer contact email to display on pages?
-- [ ] Custom domain or free GitHub subdomain?
 - [ ] Do any apps collect personal data beyond what's standard (camera, contacts, location)?
 - [ ] Are any apps paid / have subscriptions? (affects whether T&C is mandatory)
 
